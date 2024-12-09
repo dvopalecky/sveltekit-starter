@@ -1,10 +1,38 @@
 {
+  "breadcrumbs.enabled": true,
+  "editor.bracketPairColorization.enabled": true,
   "editor.formatOnSave": true,
-  "editor.defaultFormatter": "svelte.svelte-vscode",
+  "editor.tabSize": 2,
+  "files.associations": {
+    "*.svelte": "svelte"
+  },
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "javascript.format.enable": false,
+  "javascript.suggest.autoImports": false,
+  "javascript.validate.enable": true,
+  "editor.defaultFormatter": "biomejs.biome",
+  "[javascript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
   "[svelte]": {
     "editor.defaultFormatter": "svelte.svelte-vscode"
   },
+  "[typescript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[markdown]": {
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true
+  },
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
-  },
+  }
 }

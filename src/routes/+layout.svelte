@@ -1,11 +1,9 @@
 <script>
   import { onMount } from "svelte";
-  import { writable } from "svelte/store";
   import { pb } from "$lib/pocketbase";
+  import { user } from "$lib/stores";
   import "../app.css";
   let { children } = $props();
-
-  export const user = writable(pb.authStore.model);
 
   onMount(() => {
     if (pb.authStore.isValid) {

@@ -1,6 +1,37 @@
 <script>
+  import { onMount } from "svelte";
+  import { writable } from "svelte/store";
+  import { pb } from "$lib/pocketbase";
   import "../app.css";
   let { children } = $props();
+
+  export const user = writable(pb.authStore.model);
+
+  onMount(() => {
+    if (pb.authStore.isValid) {
+      user.set(pb.authStore.model);
+    }
+
+    pb.authStore.onChange((auth) => {
+      user.set(pb.authStore.model);
+    });
+  });
 </script>
 
-{@render children()}
+<div class="navbar bg-base-100">
+  <div class="flex-1">
+    <a href="/" class="btn btn-ghost normal-case text-xl">MyApp</a>
+  </div>
+  <div class="flex-none">
+    {#if $user}
+      <button class="btn btn-ghost" on:click={() => pb.authStore.clear()}
+        >Logout</button
+      >
+    {:else}
+      <a href="/login" class="btn btn-ghost">Login</a>
+      <a href="/signup" class="btn btn-ghost">Sign Up</a>
+    {/if}
+  </div>
+</div>
+
+<slot />

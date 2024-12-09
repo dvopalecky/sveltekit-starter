@@ -1,1 +1,9 @@
 Use bun as the package manager.
+
+Git message should
+- start with a capital letter
+- start with a verb
+- use < 70 characters for header
+- let description empty unless the change is large
+- Only in case of large changes, description should be below an empty line but
+  still brief

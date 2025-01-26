@@ -16,16 +16,14 @@
   }
 </script>
 
-<div
-  class="min-h-screen bg-base-200 flex items-center justify-center px-4 py-8"
->
+<div class="h-full w-full flex items-center justify-center p-4">
   <div class="w-full max-w-md">
     <div class="bg-base-100 shadow-xl rounded-lg">
       <div class="card-body p-6">
         <h2 class="text-2xl font-bold mb-4">Login</h2>
 
         {#if error}
-          <div class="alert alert-error">{error}</div>
+          <div class="alert alert-error mb-4">{error}</div>
         {/if}
 
         <form on:submit|preventDefault={login}>

@@ -2,10 +2,10 @@
   import { user } from "$lib/stores";
 </script>
 
-<div class="h-full w-full flex flex-col items-center justify-center p-4">
+<div class="h-full w-full flex items-center justify-center p-4">
   <div class="text-center max-w-full">
     {#if $user}
-      <h1 class="text-4xl md:text-5xl font-bold mb-4 break-words">
+      <h1 class="text-4xl md:text-5xl font-bold mb-2 break-words">
         Welcome,
         <br />
         <span class="text-3xl md:text-4xl">{$user.email}</span>

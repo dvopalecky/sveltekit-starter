@@ -4,7 +4,7 @@ A Svelte-based web application boilerplate.
 
 ## Technologies
 
-- [SvelteKit](https://kit.svelte.dev/)
+- [SvelteKit](https://kit.svelte.dev/) using Svelte 3 for easier understanding for LLMs
 - [Bun](https://bun.sh/) - JavaScript runtime & package manager
 - [TailwindCSS](https://tailwindcss.com/) - Utility-first CSS framework
 - [Biome](https://biomejs.dev/) - Linter & formatter

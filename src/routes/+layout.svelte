@@ -15,8 +15,8 @@
   });
 </script>
 
-<div class="min-h-screen flex flex-col overflow-x-hidden">
-  <div class="navbar bg-base-100">
+<div class="h-screen flex flex-col overflow-hidden">
+  <header class="navbar bg-base-100">
     <div class="flex-1">
       <a href="/" class="btn btn-ghost normal-case text-xl">MyApp</a>
     </div>
@@ -30,9 +30,9 @@
         <a href="/signup" class="btn btn-ghost">Sign Up</a>
       {/if}
     </div>
-  </div>
+  </header>
 
-  <main class="flex-1">
+  <main class="flex-1 overflow-auto">
     <slot />
   </main>
 </div>

@@ -40,11 +40,12 @@
 
         <form on:submit|preventDefault={signup}>
           <div class="form-control">
-            <label class="label">
+            <label class="label" for="signup-email">
               <span class="label-text">Email</span>
             </label>
             <input
               type="email"
+              id="signup-email"
               bind:value={email}
               class="input input-bordered w-full"
               required
@@ -52,11 +53,12 @@
           </div>
 
           <div class="form-control mt-3">
-            <label class="label">
+            <label class="label" for="signup-password">
               <span class="label-text">Password</span>
             </label>
             <input
               type="password"
+              id="signup-password"
               bind:value={password}
               class="input input-bordered w-full"
               required
@@ -64,11 +66,12 @@
           </div>
 
           <div class="form-control mt-3">
-            <label class="label">
+            <label class="label" for="signup-password-confirm">
               <span class="label-text">Confirm Password</span>
             </label>
             <input
               type="password"
+              id="signup-password-confirm"
               bind:value={passwordConfirm}
               class="input input-bordered w-full"
               required

@@ -28,11 +28,12 @@
 
         <form on:submit|preventDefault={login}>
           <div class="form-control">
-            <label class="label">
+            <label class="label" for="email">
               <span class="label-text">Email</span>
             </label>
             <input
               type="email"
+              id="email"
               bind:value={email}
               class="input input-bordered w-full"
               required
@@ -40,11 +41,12 @@
           </div>
 
           <div class="form-control mt-4">
-            <label class="label">
+            <label class="label" for="password">
               <span class="label-text">Password</span>
             </label>
             <input
               type="password"
+              id="password"
               bind:value={password}
               class="input input-bordered w-full"
               required

@@ -3,7 +3,6 @@
   import { pb } from "$lib/pocketbase";
   import { user } from "$lib/stores";
   import "../app.css";
-  let { children } = $props();
 
   onMount(() => {
     if (pb.authStore.isValid) {

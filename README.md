@@ -12,18 +12,14 @@ A Svelte-based web application boilerplate.
 ## Getting Started
 
 1. Copy the environment example file:
-```bash
-cp .env.example .env
-```
+`cp .env.example .env`
 
 2. Edit .env file:
 - For local development: Set `VITE_POCKETBASE_URL` to your local PocketBase instance
 - For production: Set `VITE_POCKETBASE_REMOTE_URL` to your remote PocketBase URL
 
 3. Install dependencies:
-```bash 
-bun install
-```
+`bun install`
 
 ### Development
 - Start the development server: `bun run dev`

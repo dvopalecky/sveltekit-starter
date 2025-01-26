@@ -9,7 +9,12 @@ A Svelte-based web application boilerplate.
 - [TailwindCSS](https://tailwindcss.com/) - Utility-first CSS framework
 - [Biome](https://biomejs.dev/) - Linter & formatter
 - [DaisyUI](https://daisyui.com/) - Component library
+- [Pocketbase](https://pocketbase.io/) - Backend database
+
 ## Getting Started
+- Prerequisites:
+  - [Bun](https://bun.sh/) installed locally
+  - [Pocketbase](https://pocketbase.io/) - local or remote
 
 1. Copy the environment example file:
 `cp .env.example .env`
@@ -33,5 +38,3 @@ Create a production build:
 
 Preview the production build:
 `bun run preview`
-
-> Note: You may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.

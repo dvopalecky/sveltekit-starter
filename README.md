@@ -12,30 +12,19 @@ A Svelte-based web application boilerplate.
 ## Getting Started
 
 Install dependencies:
-```bash
-bun install
-```
+`bun install`
 
 ### Development
-
-Start the development server:
-```bash
-bun run dev
-
-# or open in a new browser tab
-bun run dev -- --open
-```
+- Start the development server: `bun run dev`
+- or open in a new browser tab: `bun run dev -- --open`
 
 ### Building
 
 Create a production build:
-```bash
-bun run build
-```
+`bun run build`
+
 
 Preview the production build:
-```bash
-bun run preview
-```
+`bun run preview`
 
 > Note: You may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.

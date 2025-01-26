@@ -15,20 +15,24 @@
   });
 </script>
 
-<div class="navbar bg-base-100">
-  <div class="flex-1">
-    <a href="/" class="btn btn-ghost normal-case text-xl">MyApp</a>
+<div class="min-h-screen flex flex-col overflow-x-hidden">
+  <div class="navbar bg-base-100">
+    <div class="flex-1">
+      <a href="/" class="btn btn-ghost normal-case text-xl">MyApp</a>
+    </div>
+    <div class="flex-none">
+      {#if $user}
+        <button class="btn btn-ghost" on:click={() => pb.authStore.clear()}
+          >Logout</button
+        >
+      {:else}
+        <a href="/login" class="btn btn-ghost">Login</a>
+        <a href="/signup" class="btn btn-ghost">Sign Up</a>
+      {/if}
+    </div>
   </div>
-  <div class="flex-none">
-    {#if $user}
-      <button class="btn btn-ghost" on:click={() => pb.authStore.clear()}
-        >Logout</button
-      >
-    {:else}
-      <a href="/login" class="btn btn-ghost">Login</a>
-      <a href="/signup" class="btn btn-ghost">Sign Up</a>
-    {/if}
-  </div>
-</div>
 
-<slot />
+  <main class="flex-1">
+    <slot />
+  </main>
+</div>

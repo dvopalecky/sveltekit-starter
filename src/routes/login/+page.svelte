@@ -16,11 +16,13 @@
   }
 </script>
 
-<div class="hero min-h-screen bg-base-200">
-  <div class="hero-content flex-col">
-    <div class="card w-96 bg-base-100 shadow-xl">
-      <div class="card-body">
-        <h2 class="card-title">Login</h2>
+<div
+  class="min-h-screen bg-base-200 flex items-center justify-center px-4 py-8"
+>
+  <div class="w-full max-w-md">
+    <div class="bg-base-100 shadow-xl rounded-lg">
+      <div class="card-body p-6">
+        <h2 class="text-2xl font-bold mb-4">Login</h2>
 
         {#if error}
           <div class="alert alert-error">{error}</div>
@@ -34,25 +36,25 @@
             <input
               type="email"
               bind:value={email}
-              class="input input-bordered"
+              class="input input-bordered w-full"
               required
             />
           </div>
 
-          <div class="form-control">
+          <div class="form-control mt-4">
             <label class="label">
               <span class="label-text">Password</span>
             </label>
             <input
               type="password"
               bind:value={password}
-              class="input input-bordered"
+              class="input input-bordered w-full"
               required
             />
           </div>
 
           <div class="form-control mt-6">
-            <button class="btn btn-primary">Login</button>
+            <button class="btn btn-primary w-full">Login</button>
           </div>
         </form>
       </div>
